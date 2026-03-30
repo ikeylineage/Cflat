@@ -1,1 +1,1 @@
-C:\Users\shado\Downloads\TEST\runtime\target\release\runtime.dll: C:\Users\shado\Downloads\TEST\runtime\src\lib.rs
+C:\Users\shado\Downloads\TEST\native\target\release\runtime.dll: C:\Users\shado\Downloads\TEST\native\src\lib.rs
