@@ -1,4 +1,4 @@
-runtime/target/
+native/target/
 
 compiler/bin/
 compiler/obj/
