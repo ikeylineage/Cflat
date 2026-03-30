@@ -1,0 +1,10 @@
+runtime/target/
+
+compiler/bin/
+compiler/obj/
+
+.vs/
+.vscode/
+*.user
+*.suo
+.DS_Store
