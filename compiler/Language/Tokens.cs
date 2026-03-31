@@ -65,6 +65,9 @@ namespace Tokens {
         Const,
         Comment,
         Arrow, //for function return type
+        Match, // checks a value against multiple whens (Switch)
+        When, //a possible met condition in a Match statement (Case)
+        WhenNot, //runs when no conditions from when are met (Default)
         SemiColon,
         EOF,
     }
