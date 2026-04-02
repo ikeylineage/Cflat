@@ -18,7 +18,7 @@ namespace Tokens {
         CBWhile,
         CBFor,
         CBForeach, //Foreach i in myList[]
-        In,
+        CBIn,
         Assign, //=
         Not, //!
         Compare, //==
@@ -34,7 +34,7 @@ namespace Tokens {
         LesserEquals, //<=
         Function, 
         And,
-        Or,
+        CBOr,
         Give, //assign in a function
         Return,
         Let, //local variable
@@ -51,24 +51,25 @@ namespace Tokens {
         True,
         False,
         CBNull,
-        CBUsing,
+        Use,
         Dot, //member access
         Comma,
         Identifier, //naming variables/functions
         CBStruct, //struct
         CBEnum, //enum
-        CBNamespace,
-        Break,
-        Continue,
+        Module,
+        CBBreak,
+        CBContinue,
         Try, //runs {code}
         Except, //if try {code} fails Except run {code}
-        Const,
-        Comment,
+        CBConst,
         Arrow, //for function return type
+        FatArrow, //=>
         Match, // checks a value against multiple whens (Switch)
         When, //a possible met condition in a Match statement (Case)
         WhenNot, //runs when no conditions from when are met (Default)
         SemiColon,
+        Colon,
         EOF,
     }
 

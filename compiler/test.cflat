@@ -1,0 +1,60 @@
+using MyModule;
+
+module MyModule {
+    struct Player {
+        name: string
+        health: int
+    }
+
+    enum Direction {
+        North,
+        South,
+        East,
+        West
+    }
+
+    const MAX_HEALTH = 100;
+
+    func takeDamage(p: Player, amount: int) -> abyss {
+        p.health = p.health - amount;
+    }
+
+    func getHealth(p: Player) -> int {
+        return p.health;
+    }
+}
+
+func main() -> abyss {
+    let x = if true {
+        give 1
+    } else {
+        give 2
+    }
+
+    p = Player { name: "John", health: 100 };
+    let result = null;
+
+    match x {
+        when 1 =>
+            result = "one";
+        when 2 =>
+            result = "two";
+        whennot =>
+            result = "unknown";
+    }
+
+    for i in [1, 2, 3] {
+        let y = i + 1;
+        if y == 2 {
+            continue;
+        } else {
+            break;
+        }
+    }
+
+    try {
+        let z = 10 / 0;
+    } except {
+        result = "error";
+    }
+}

@@ -1,7 +1,17 @@
-using MyLanguage;
+using Tokens;
+using TheLexer;
 
-Console.WriteLine("C# Compiler: Parsing source...");
-string mockBytecode = "PUSH 10; PUSH 20; ADD; PRINT;";
+public static class Program {
+    public static void Main() {
+        Console.WriteLine("INPUT TOKEN:");
+        string input = File.ReadAllText("test.cflat");
 
-// Call the Rust library
-RuntimeBridge.run_bytecode(mockBytecode);
+        Lexer lexer = new Lexer(input);
+        Token token = lexer.GetNextToken();
+
+        while (token.Type != TokenTypes.EOF) {
+            token.PrintToken();
+            token = lexer.GetNextToken();
+        }
+    }
+}
